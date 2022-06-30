@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BookingActivity"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/stud_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Finance"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:clickable="true"
+            android:scaleType="center"
+
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:scaleType="center"
+            tools:ignore="MissingConstraints" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton3"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:clickable="true"
+            android:scaleType="center"
+            android:layout_marginRight="20dp"
+            tools:ignore="MissingConstraints" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton4"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:clickable="true"
+            android:scaleType="center"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/entry1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/table_id1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Balance:"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/user1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="1000 Rs"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/entry2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/table_id2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Send Money"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/user2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enter Amount"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"/>
+
+        <Button
+            android:id="@+id/statusbtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Send"
+            android:clickable="false"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/entry3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/table_id3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mobile Recharge"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/user3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enter Amount"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"/>
+
+        <Button
+            android:id="@+id/statusbtn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Recharge"
+            android:clickable="false"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/entry4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/table_id4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Account Management"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/statusbtn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Settings"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/entry5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/table_id5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Explore"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/statusbtn5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Go"
+            android:clickable="false"/>
+    </LinearLayout>
+
+</LinearLayout>
